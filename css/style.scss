@@ -1,0 +1,187 @@
+
+@import 'bootstrap';
+@import 'bootstrap-theme';
+@import 'ie10-viewport-bug-workaround';
+@import 'swipebox.min';
+
+body {
+    padding-top: 50px;
+    font-family: 'Jaldi', sans-serif;
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    .navbar-nav > li > a {
+        padding-bottom: 10px;
+    }
+}
+@media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+section {
+    padding: 60px 0;
+}
+
+h1 {
+    margin: 0;
+    position: relative;
+    font-size: 53px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.full-width-wrap {
+    width: 100%;
+    background-color: white;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.inverse {
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+#navbar {
+    border-color: #252525;
+    box-shadow: 0 0 15px 0 #333;
+    margin-bottom: 0;
+    text-align: center;
+
+    .navbar-nav {
+        float: none;
+        display: inline-block;
+        font-family: 'Exo', sans-serif;
+    }
+}
+
+#bannerWrapper {
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    background: url(../img/top.svg) no-repeat right bottom fixed;
+    background-size: cover;
+    z-index: -1;
+
+    #banner {
+        display: none; // orig
+        width: 100%;
+        max-width: 1000px;
+        height: 80%;
+        margin: auto;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+
+#header {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    color: white;
+
+    #header-content {
+        position: relative;
+        top: 120px;
+    }
+
+    .glyphicon-earphone {
+        top: 3px;
+    }
+}
+
+#services {
+    li {
+        margin: 15px 0;
+    }
+
+    .service-icon {
+        max-width: 130px;
+        margin: 30px auto;
+    }
+}
+
+#experience {
+    display: none;
+
+    hr {
+        width: 100px;
+        border-width: 2px;
+        border-color: darkgrey;
+    }
+}
+
+#gallery {
+    section {
+        padding: 0;
+    }
+
+    a.photo {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+}
+
+#contact {
+    background: url("../img/bg.svg");
+    background-repeat: repeat;
+    background-color: #e6d4d2;
+    background-size: 120px 100px;
+    @media (min-width: 768px) {
+        padding: 120px 0;
+    }
+
+    #motto {
+        font-family: 'Dancing Script', cursive;
+        margin: 30px 0 60px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    p {
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+        margin: 20px 0;
+    }
+}
+
+#footer {
+    padding-top: 19px;
+    color: #777;
+}
+
+#map-container embed,
+#map-container iframe,
+#map-container object {
+    width: 100%;
+    max-height: 400px;
+}
